@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  #content
+    a.back-button(href="/") Home
+    if isCreated || isDeleted
+      h1.main-heading= message
+    else
+      h1.main-heading= message

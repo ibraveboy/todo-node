@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #8134DF;
+  color: white;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  position: relative;
+}
+
+#content .back-button {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border-radius: 0.5rem;
+  width: 50px;
+  height: 30px;
+  background-color: #3B1669;
+  color: white;
+  text-decoration: none;
+  padding: 0;
+  padding-top: 7px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#content .main-heading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #3B1669;
+}
+
+#content .todo-create-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+}
+
+#content .todo-create-form .form-control {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#content .todo-create-form .text-input {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #3B1669;
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border: none;
+}
+
+#content .todo-create-form .text-input::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+#content .todo-create-form .text-input:focus-visible {
+  outline: none;
+}
+
+#content .todo-create-form .button {
+  width: 200px;
+  height: 2rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #3B1669;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+#content .all-todos-container {
+  width: 500px;
+  text-align: center;
+}
+
+#content .all-todos-container .todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #3B1669;
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+#content .all-todos-container .todo-item .todo-delete .button {
+  border: none;
+  border-radius: 5px;
+  background-color: #8134DF;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem;
+}

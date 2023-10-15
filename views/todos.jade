@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  #content
+    a.back-button(href='/') Home
+    h1.main-heading All Todos
+    .all-todos-container
+      if todos.length
+        each todo in todos
+          .todo-item
+            .todo-text= todo
+            .todo-delete
+              form(method='POST', action='/todo/delete')
+                input(type='hidden', name='todo', value=todo)
+                input.button(type='submit', value='Delete')
+      else
+        p No to-dos found. Please click 
+          a(href='/') here
+          span  to add a todo.

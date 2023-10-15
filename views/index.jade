@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  #content
+    h1.main-heading= title
+    form.todo-create-form(method='post', action='/todo/create')
+      .form-control
+        input.text-input(type='text', name='todo', placeholder='Enter a todo item')
+      .form-control
+        input.button(type='submit', value='Add')
+        a.button(href='/todo/all') View All
