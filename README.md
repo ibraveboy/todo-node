@@ -1,2 +1,2 @@
 # todo-node
-A simple node application to deploy on AWS EC2.
+A simple node application to learn the deployment on AWS EC2.
